@@ -27,17 +27,16 @@ export function Navbar() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-brand-blue/10 bg-background/90 backdrop-blur-md">
-      <nav className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-3 sm:px-6">
+      <nav className="mx-1 flex max-w-7xl items-center gap-3 px-4 py-3 sm:px-6">
         <a
           href="#home"
-          className="flex shrink-0 items-center gap-2 rounded-full bg-brand-blue px-3 py-1.5 font-display text-base font-extrabold text-white shadow-sm sm:text-lg"
-        >
+          className="flex shrink-0 items-center gap-2 rounded-full bg-brand-blue px-3 py-1 font-display text-base font-extrabold text-white shadow-sm sm:text-lg">
           <Recycle className="size-5" aria-hidden="true" />
           <span>E-Waste Explorer</span>
         </a>
 
         {/* Desktop: scrollable jump links */}
-        <ul className="hidden flex-1 items-center gap-1 overflow-x-auto lg:flex">
+        <ul className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1 lg:flex">
           {NAV_LINKS.map(({ id, label }) => (
             <li key={id} className="shrink-0">
               <a

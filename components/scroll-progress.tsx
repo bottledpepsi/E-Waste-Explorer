@@ -22,7 +22,7 @@ export function ScrollProgress() {
 
   return (
     <div
-      className="fixed inset-x-0 top-0 z-[60] h-1.5 bg-transparent"
+      className="fixed inset-x-0 top-0 z-60 h-1 bg-transparent"
       role="progressbar"
       aria-label="Page scroll progress"
       aria-valuenow={Math.round(progress)}
@@ -30,7 +30,7 @@ export function ScrollProgress() {
       aria-valuemax={100}
     >
       <div
-        className="h-full bg-gradient-to-r from-brand-blue via-brand-teal to-brand-green transition-[width] duration-150 ease-out"
+        className="h-full bg-linear-to-r from-brand-blue via-brand-teal to-brand-green transition-[width] duration-150 ease-out"
         style={{ width: `${progress}%` }}
       />
     </div>

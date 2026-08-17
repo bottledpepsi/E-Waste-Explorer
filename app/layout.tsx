@@ -16,10 +16,9 @@ const baloo = Baloo_2({
 })
 
 export const metadata: Metadata = {
-  title: 'E-Waste Explorer — A Guide to Electronic Waste',
+  title: 'E-Waste Explorer',
   description:
-    'An investigation into electronic waste (e-waste): what it is, why it matters, its impacts on the environment, wildlife and people, and what we can do about it.',
-  generator: 'v0.app',
+    'An investigation into electronic waste'
 }
 
 export const viewport: Viewport = {
