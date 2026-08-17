@@ -1,5 +1,4 @@
 import { Navbar } from '@/components/navbar'
-import { ScrollProgress } from '@/components/scroll-progress'
 import { SiteFooter } from '@/components/site-footer'
 import { Hero } from '@/components/sections/hero'
 import { WhatIsIt } from '@/components/sections/what-is-it'
@@ -21,7 +20,6 @@ import { Reflection } from '@/components/sections/reflection'
 export default function Page() {
   return (
     <>
-      <ScrollProgress />
       <Navbar />
       <main>
         <Hero />
