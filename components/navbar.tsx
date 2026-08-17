@@ -27,9 +27,9 @@ export function Navbar() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-brand-blue/10 bg-background/90 backdrop-blur-md">
-      <nav className="mx-1 flex max-w-7xl items-center gap-2 px-4 py-5 sm:px-6">
+      <nav className="mx-1 flex max-w-7xl items-center gap-2 px-4 py-8 sm:px-6">
         {/* Desktop: scrollable jump links */}
-        <ul className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1 lg:flex">
+        <ul className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1 min-[1480px]:flex">
           {NAV_LINKS.map(({ id, label }) => (
             <li key={id} className="shrink-0">
               <a
@@ -51,7 +51,7 @@ export function Navbar() {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="ml-auto inline-flex items-center gap-2 rounded-full border border-brand-blue/20 bg-card px-3 py-2 text-sm font-bold text-brand-blue lg:hidden"
+          className="ml-auto inline-flex items-center gap-2 rounded-full border border-brand-blue/20 bg-card px-3 py-2 text-sm font-bold text-brand-blue min-[1480px]:hidden"
           aria-expanded={open}
           aria-controls="mobile-menu"
         >
@@ -62,7 +62,7 @@ export function Navbar() {
 
       {/* Mobile panel */}
       {open && (
-        <div id="mobile-menu" className="border-t border-brand-blue/10 bg-background lg:hidden">
+        <div id="mobile-menu" className="border-t border-brand-blue/10 bg-background min-[1480px]:hidden">
           <ul className="mx-auto grid max-w-7xl grid-cols-2 gap-1.5 px-4 py-4 sm:grid-cols-3">
             {NAV_LINKS.map(({ id, label }) => (
               <li key={id}>
