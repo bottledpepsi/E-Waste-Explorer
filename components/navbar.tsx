@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { Menu, Recycle, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { NAV_LINKS } from '@/lib/ewaste-data'
 import { cn } from '@/lib/utils'
 
@@ -27,14 +27,7 @@ export function Navbar() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-brand-blue/10 bg-background/90 backdrop-blur-md">
-      <nav className="mx-1 flex max-w-7xl items-center gap-2 px-4 py-3 sm:px-6">
-        <a
-          href="#home"
-          className="flex shrink-0 items-center gap-2 rounded-full bg-brand-blue px-3 py-1 font-display text-base font-extrabold text-white shadow-sm sm:text-lg">
-          <Recycle className="size-5" aria-hidden="true" />
-          <span>E-Waste Explorer</span>
-        </a>
-
+      <nav className="mx-1 flex max-w-7xl items-center gap-2 px-4 py-5 sm:px-6">
         {/* Desktop: scrollable jump links */}
         <div className="hidden min-w-0 flex-1 overflow-x-auto xl:block [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           <ul className="flex w-max items-center justify-center gap-1 mx-auto">
