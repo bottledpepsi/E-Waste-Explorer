@@ -27,7 +27,7 @@ export function Navbar() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-brand-blue/10 bg-background/90 backdrop-blur-md">
-      <nav className="mx-1 flex max-w-7xl items-center gap-2 px-4 py-8 sm:px-6">
+      <nav className="mx-1 flex max-w-7xl items-center gap-2 px-4 py-6 sm:px-6">
         {/* Desktop: scrollable jump links */}
         <ul className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1 min-[1480px]:flex">
           {NAV_LINKS.map(({ id, label }) => (
