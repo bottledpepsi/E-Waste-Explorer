@@ -111,16 +111,6 @@ export const SOURCES: Source[] = [
         url: 'https://www.dcceew.gov.au/environment/protection/waste/publications/factsheet-national-television-and-computer-recycling-scheme-recycling-targets',
     },
     {
-        title: 'National Television and Computer Recycling Scheme — Myths and Facts',
-        detail: 'Australian Government — DCCEEW',
-        url: 'https://www.dcceew.gov.au/environment/protection/waste/publications/factsheet-national-television-and-computer-recycling-scheme-myths-and-facts',
-    },
-    {
-        title: 'National Television and Computer Recycling Scheme — Operation of the Scheme',
-        detail: 'Australian Government — DCCEEW',
-        url: 'https://www.dcceew.gov.au/environment/protection/waste/publications/factsheet-television-and-computer-recycling-scheme-operation',
-    },
-    {
         title: 'National Television and Computer Recycling Scheme — Co-regulatory Arrangements',
         detail: 'Australian Government — DCCEEW',
         url: 'https://www.dcceew.gov.au/environment/protection/waste/product-stewardship/products-schemes/television-computer-recycling-scheme/coreg-arrangements',
