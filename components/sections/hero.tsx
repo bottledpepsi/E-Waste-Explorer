@@ -28,7 +28,6 @@ export function Hero() {
                 <Reveal delay={80}>
                     <h1 className="mt-5 font-display text-5xl font-extrabold tracking-tight text-balance text-brand-navy sm:text-6xl lg:text-7xl">
                         Electronic Waste{' '}
-                        <span className="text-brand-blue">(E-Waste)</span>
                     </h1>
                 </Reveal>
 
